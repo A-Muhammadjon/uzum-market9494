@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 1130vh;
+}
+
+.navbar_bottom {
+    width: 100%;
+    height: 35px;
+    background: rgb(225, 225, 225);
+    display: flex;
+    justify-content: space-evenly;
+}
+.logoo{
+    display: none;
+}
+.navbarBottom_card {
+    width: 35%;
+    height: 100%;
+    display: flex;
+}
+.navbarBottom_cart{
+    width: 30%;
+}
+
+.navbarBottom_card i {
+    font-size: 20px;
+    margin: 5px 0 5px 10px;
+    cursor: pointer;
+}
+
+.navbarBottom_card p {
+    font-size: 16px;
+    margin: 5px 5px;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+.navbarBottom_card p span {
+    font-family: monospace;
+    border-bottom: 1px solid black;
+}
+
+.navbar {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80px;
+}
+
+.navlogo {
+    padding: 5px;
+    width: 250px;
+    height: auto;
+    display: flex;
+    text-align: center;
+}
+
+.navlogo .logotext {
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(134, 4, 255);
+}
+
+.logoimg {
+    width: 35px;
+    height: 35px;
+    border-radius: 30%;
+    background: url(./uzum.png) no-repeat center/cover;
+}
+.katalog{
+    border-radius: 5px;
+    background: rgb(222, 222, 238);
+    display: flex;
+    margin: 5px 0px 5px 0px;
+    width: 140px;
+    height: 40px;
+    transition: .3s;
+    cursor: pointer;
+    border: none;
+    p{
+        color: rgb(75, 75, 213);
+        margin: 10px 0 0 10px ;
+        font-size: 16px;
+    }
+}
+.katalog:hover{
+    background-color:rgb(195, 195, 246);
+}
+.katalog i{
+    font-size: 20px;
+    color: rgb(75, 75, 213);
+    margin: 10px 0 0 10px ;
+}
+.navbar input{
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+    padding: 10px 0px;
+    width: 500px;
+    height: 40px;
+    margin: 5px 0px 5px 10px;
+    border:  1px solid gainsboro;
+}
+.search{
+    position: relative;
+    left: -50px;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    width: 80px;
+    background: #EDEFF2;
+    height: 40px;
+    margin: 5px 0px 5px 0px;
+    border:  1px solid gainsboro;
+
+}
+.search i{
+    font-size: 16px;
+    margin: auto;
+}
+.i i{
+    font-size: 18px;
+    margin: 0 10px 0 0;
+}
+.navbar .i{
+    padding: 10px;
+    display: flex;
+}
+.main-navbar{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-navbar ul li img{
+    width: 24px;
+    height: 24px;
+}
+.main-navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.main-navbar ul li{
+    margin: 0% 7px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4d4f59;
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-navbar ul li p{
+    color: #1F2026;
+    line-height: 25px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.banner{
+    width: 100%;
+    height: 400vh;
+    padding: 10px 100px;
+
+}
+.reklama{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+}
+.images {
+    display: flex;
+    width: 100%;
+}
+.images img {
+    width: 100%;
+    transition: all 0.15s;
+    border-radius: 12px;
+}
+.images input {
+    display: none;
+}
+.nuqta {
+    position: relative;
+    top: -35px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.nuqta label {
+    height: 20px;
+    width: 20px;
+    padding: 2px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 5px;
+}
+.nuqta label .label-nuqta{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: blue;
+    display: none;
+}
+.nuqta label:hover {background: #fff;}
+#img1:checked ~ .rasm1 {
+    margin-left: 0;
+}
+#img2:checked ~ .rasm2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .rasm3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .rasm4 {
+    margin-left: -300%;
+}
+#img1:checked ~ .label-nuqta {
+    display: block;
+}
+.Mashhur{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.banner .card{
+    width: 250px;
+    height: 500px;
+    border-radius: 12px;
+    margin: 10px 20px;
+    transition: all 1s;
+}
+.banner .card img{
+}
+.card:hover{
+    box-shadow: 0 0 3px 1px #1F2026;
+}
+.card .img{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    border-radius: 12px 12px 0 0;
+}
+.card .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 12px 0 0;
+}
+.card .malumot{
+    width: 100%;
+    height: 30%;
+}
+.card .malumot p{
+    font-size: 16px;
+    margin: 0% 0 15px 0;
+}
+.card .malumot del{
+    margin: 10px 0 0 0 ;
+    position: relative;
+}
+.reklama1{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+    height: auto;
+}
+.yana{
+    width: 50%;
+    height: 50px;
+    background-color: #EDEFF2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+.reklama1 img{
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+}
+.banner h1{
+    color: #4d4f59;
+    left: 300px;
+}
+.footer{
+    margin:100px auto;
+    justify-content: space-around;
+    width: 80%;
+    height: 400px;
+}
+.footer-box{
+    display: flex;
+}
+.quti{
+    margin-top: 50px;
+    width: 30%;
+}
+.quti h3{
+    color: rgb(81, 77, 77);
+    margin: 10px;
+}
+.quti p{
+    font-size: 14px;
+    margin: 10px;
+}
+.quti p i {
+    font-size: 18px;
+    margin: 10px;
+}
+@media (max-width:1159px){
+    .navbar_bottom{
+        .navbarBottom_card p{
+            font-size: 14px;
+        }
+    }
+    .navbar{ 
+        .logotext{
+            font-size: 18px;
+        }
+        .logoimg{
+            width: 30px;
+            height: 30px;
+        }
+        .i i{
+            font-size: 14px;
+        }
+        .i{
+            font-size: 14px;
+        }
+        .katalog{
+            width: 120px;
+            height: 35px;
+        }
+        input{
+            height: 35px;
+            width: 380px;
+        }
+        .search{
+            height: 35px;
+            width: 70px;
+        }
+    }
+    .main-navbar ul li{
+       font-size: 10px;
+       font-weight:bolder;
+    }
+    .main-navbar ul li p{
+        font-size: 10px;
+    }
+    .banner{
+        padding: 0%;
+    }
+}
+@media (max-width:955px){
+    .katalog{
+        display: none;
+    }
+    .navlogo{
+        position: relative;
+        top: -50px;
+    }
+    .logotext{
+        position: relative;
+        top: -7px;
+    }
+    .search{
+        display: none;
+    }
+    .i i, .i p{
+        display: none;
+    }
+    .navbarBottom_card p{
+        display: none;
+    }
+    .navbar input{
+        width: 100vw;
+        border-radius: 7px;
+        text-align: center;
+        position: relative;
+        margin-left: -150px;
+    }
+    .main-navbar{
+        display: none;
+    }
+}
+@media (max-width:880px){
+    .card{
+        width: 200px;
+        height: 400px;
+    }
+}
+@media (max-width:600px){
+    .card{
+        width: 300px;
+        height: 600px;
+    }
+    .footer{
+        font-size: 14px;
+    }
+}
